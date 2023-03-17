@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-16T11:41:14.813Z",
+    "end": "2023-03-16T11:41:27.604Z",
+    "duration": 12791,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2eea5824-6ebb-4130-9c89-15ec9b286193",
+      "title": "",
+      "fullFile": "cypress/integration/3-ALURAPIC/alurapic.spec.js",
+      "file": "cypress/integration/3-ALURAPIC/alurapic.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9f2e6b56-9e28-4fda-b79e-6c8e946b069a",
+          "title": "Login e registro de usuarios AluraPic",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "registrar novo usuário Quality",
+              "fullTitle": "Login e registro de usuarios AluraPic registrar novo usuário Quality",
+              "timedOut": null,
+              "duration": 4115,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.registrarUsuario(usuario.email, usuario.fullName, usuario.userName, usuario.password);\ncy.contains(' .btn', 'Register').click();",
+              "err": {},
+              "uuid": "f101e4a1-3cd4-4045-8089-05d10dc401ea",
+              "parentUUID": "9f2e6b56-9e28-4fda-b79e-6c8e946b069a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "registrar novo usuário lele",
+              "fullTitle": "Login e registro de usuarios AluraPic registrar novo usuário lele",
+              "timedOut": null,
+              "duration": 2587,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.registrarUsuario(usuario.email, usuario.fullName, usuario.userName, usuario.password);\ncy.contains(' .btn', 'Register').click();",
+              "err": {},
+              "uuid": "dc664451-0363-4901-a5b7-08e2fb68148c",
+              "parentUUID": "9f2e6b56-9e28-4fda-b79e-6c8e946b069a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "registrar novo usuário anaben",
+              "fullTitle": "Login e registro de usuarios AluraPic registrar novo usuário anaben",
+              "timedOut": null,
+              "duration": 2995,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.registrarUsuario(usuario.email, usuario.fullName, usuario.userName, usuario.password);\ncy.contains(' .btn', 'Register').click();",
+              "err": {},
+              "uuid": "86d2bc3b-38f5-4744-92fe-30aa4c9084da",
+              "parentUUID": "9f2e6b56-9e28-4fda-b79e-6c8e946b069a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f101e4a1-3cd4-4045-8089-05d10dc401ea",
+            "dc664451-0363-4901-a5b7-08e2fb68148c",
+            "86d2bc3b-38f5-4744-92fe-30aa4c9084da"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9697,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

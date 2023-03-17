@@ -1,0 +1,27 @@
+[
+    {
+      "email": "qa@alura.com.br",
+      "fullName": "Qa Alura",
+      "userName": "quality",
+      "password": "skywalker"
+    },
+    {
+      "email": "lele.organa@alura.com.br",
+      "fullName": "Leia Lele",
+      "userName": "lele2023",
+      "password": "general555"
+    },
+    {
+      "email": "anaben.skywalker@alura.com.br",
+      "fullName": "Ana Ben",
+      "userName": "anaben",
+      "password": "darthvader"
+    },
+    {
+        "email": "organa@alura.com.br",
+        "fullName": "Organa20",
+        "userName": "organajulia",
+        "password": "general10"
+      }
+    
+  ]

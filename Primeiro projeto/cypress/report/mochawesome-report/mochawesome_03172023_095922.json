@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-17T12:59:02.620Z",
+    "end": "2023-03-17T12:59:22.486Z",
+    "duration": 19866,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a6ef6d8f-3b3e-45b7-bf84-54a077b857aa",
+      "title": "",
+      "fullFile": "cypress/integration/3-ALURAPIC/cadastro.spec.js",
+      "file": "cypress/integration/3-ALURAPIC/cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b9e6df52-b09f-4f11-820c-7ae7626f08e8",
+          "title": "Cadastros de usuarios AluraPic",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar mensagens de email invalido",
+              "fullTitle": "Cadastros de usuarios AluraPic Verificar mensagens de email invalido",
+              "timedOut": null,
+              "duration": 2972,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"email\"]').type('kelly');\ncy.contains('ap-vmessage', 'Invalid e-mail').should('be.visible');",
+              "err": {},
+              "uuid": "65400b9d-33ed-4e88-ad23-f896755e00ce",
+              "parentUUID": "b9e6df52-b09f-4f11-820c-7ae7626f08e8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica mensagens de validaçao",
+              "fullTitle": "Cadastros de usuarios AluraPic Verifica mensagens de validaçao",
+              "timedOut": null,
+              "duration": 1690,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Email is required!').should('be.visible');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Full name is required!').should('be.visible');\ncy.contains('ap-vmessage', 'User name is required!').should('be.visible');\ncy.contains('ap-vmessage', 'Password is required!').should('be.visible');",
+              "err": {},
+              "uuid": "cba48cd6-df8c-4e86-aade-a6f9aa9d0dbd",
+              "parentUUID": "b9e6df52-b09f-4f11-820c-7ae7626f08e8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar mensagem de senha com menos de 8 caracteres",
+              "fullTitle": "Cadastros de usuarios AluraPic Verificar mensagem de senha com menos de 8 caracteres",
+              "timedOut": null,
+              "duration": 1585,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"password\"]').type('888');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Mininum length is 8').should('be.visible');",
+              "err": {},
+              "uuid": "486a6063-9f00-4a3f-b055-91246f974530",
+              "parentUUID": "b9e6df52-b09f-4f11-820c-7ae7626f08e8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "registrar novo usuário quality",
+              "fullTitle": "Cadastros de usuarios AluraPic registrar novo usuário quality",
+              "timedOut": null,
+              "duration": 2862,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.registrarUsuario(usuario.email, usuario.fullName, usuario.userName, usuario.password);\ncy.contains(' .btn', 'Register').click();",
+              "err": {},
+              "uuid": "c506b944-6aad-4c7b-83ef-67587b6920cb",
+              "parentUUID": "b9e6df52-b09f-4f11-820c-7ae7626f08e8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "registrar novo usuário lele2023",
+              "fullTitle": "Cadastros de usuarios AluraPic registrar novo usuário lele2023",
+              "timedOut": null,
+              "duration": 3102,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.registrarUsuario(usuario.email, usuario.fullName, usuario.userName, usuario.password);\ncy.contains(' .btn', 'Register').click();",
+              "err": {},
+              "uuid": "3e24c251-2194-4c69-9761-b65b265a318e",
+              "parentUUID": "b9e6df52-b09f-4f11-820c-7ae7626f08e8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "registrar novo usuário anaben",
+              "fullTitle": "Cadastros de usuarios AluraPic registrar novo usuário anaben",
+              "timedOut": null,
+              "duration": 2679,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.registrarUsuario(usuario.email, usuario.fullName, usuario.userName, usuario.password);\ncy.contains(' .btn', 'Register').click();",
+              "err": {},
+              "uuid": "d8f1138f-a8e5-4af1-addc-7f5e77214429",
+              "parentUUID": "b9e6df52-b09f-4f11-820c-7ae7626f08e8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "registrar novo usuário organajulia",
+              "fullTitle": "Cadastros de usuarios AluraPic registrar novo usuário organajulia",
+              "timedOut": null,
+              "duration": 2634,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.registrarUsuario(usuario.email, usuario.fullName, usuario.userName, usuario.password);\ncy.contains(' .btn', 'Register').click();",
+              "err": {},
+              "uuid": "e7b3e43d-6cc2-4a0f-959d-7a9eb0bbe492",
+              "parentUUID": "b9e6df52-b09f-4f11-820c-7ae7626f08e8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "65400b9d-33ed-4e88-ad23-f896755e00ce",
+            "cba48cd6-df8c-4e86-aade-a6f9aa9d0dbd",
+            "486a6063-9f00-4a3f-b055-91246f974530",
+            "c506b944-6aad-4c7b-83ef-67587b6920cb",
+            "3e24c251-2194-4c69-9761-b65b265a318e",
+            "d8f1138f-a8e5-4af1-addc-7f5e77214429",
+            "e7b3e43d-6cc2-4a0f-959d-7a9eb0bbe492"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17524,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

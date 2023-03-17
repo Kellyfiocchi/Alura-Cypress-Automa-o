@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-08T14:51:52.976Z",
+    "end": "2023-03-08T14:52:06.746Z",
+    "duration": 13770,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d88b2c3f-1779-4816-b954-6c35a56c1433",
+      "title": "",
+      "fullFile": "cypress/integration/3-ALURAPIC/alurapic.spec.js",
+      "file": "cypress/integration/3-ALURAPIC/alurapic.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9e928479-0934-4e66-9fce-64cd76aa466e",
+          "title": "Login e registro de usuarios AluraPic",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica mensagens de validaçao",
+              "fullTitle": "Login e registro de usuarios AluraPic Verifica mensagens de validaçao",
+              "timedOut": null,
+              "duration": 3279,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Email is required!').should('be.visible');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Full name is required!').should('be.visible');\ncy.contains('ap-vmessage', 'User name is required!').should('be.visible');\ncy.contains('ap-vmessage', 'Password is required!').should('be.visible');",
+              "err": {},
+              "uuid": "1563deb4-a8c2-4efb-b1f4-9cc338c41130",
+              "parentUUID": "9e928479-0934-4e66-9fce-64cd76aa466e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar mensagens de email invalido",
+              "fullTitle": "Login e registro de usuarios AluraPic Verificar mensagens de email invalido",
+              "timedOut": null,
+              "duration": 2130,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"email\"]').type('kelly');\ncy.contains('ap-vmessage', 'Invalid e-mail').should('be.visible');",
+              "err": {},
+              "uuid": "3fbe3e3f-9bcc-4d3d-864b-a1cbb610600c",
+              "parentUUID": "9e928479-0934-4e66-9fce-64cd76aa466e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar mensagem de senha com menos de 8 caracteres",
+              "fullTitle": "Login e registro de usuarios AluraPic Verificar mensagem de senha com menos de 8 caracteres",
+              "timedOut": null,
+              "duration": 2004,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"password\"]').type('888');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Mininum length is 8').should('be.visible');",
+              "err": {},
+              "uuid": "0607ab6e-b9fc-4e1b-a0de-adb73d5f1ff2",
+              "parentUUID": "9e928479-0934-4e66-9fce-64cd76aa466e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar mensagem de que o nome do usuario deve estar em letra minúscula",
+              "fullTitle": "Login e registro de usuarios AluraPic Verificar mensagem de que o nome do usuario deve estar em letra minúscula",
+              "timedOut": null,
+              "duration": 1787,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"userName\"]').type('KELLY');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Must be lower case').should('be.visible');",
+              "err": {},
+              "uuid": "76d3351b-04f4-41f1-89df-d7ac76cccdd7",
+              "parentUUID": "9e928479-0934-4e66-9fce-64cd76aa466e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1563deb4-a8c2-4efb-b1f4-9cc338c41130",
+            "3fbe3e3f-9bcc-4d3d-864b-a1cbb610600c",
+            "0607ab6e-b9fc-4e1b-a0de-adb73d5f1ff2",
+            "76d3351b-04f4-41f1-89df-d7ac76cccdd7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9200,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
