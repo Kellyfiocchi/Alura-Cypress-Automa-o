@@ -2,7 +2,7 @@ describe('Cadastros de usuarios AluraPic',() =>{
 
 
     beforeEach(() =>{
-        cy.visit('https://alura-fotos.herokuapp.com')
+        cy.visit('/')
     })
 
     it('Verificar mensagens de email invalido', () => {
